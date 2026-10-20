@@ -7,8 +7,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import com.iesdoctorbalmis.spring.model.Cliente;
-import com.iesdoctorbalmis.spring.model.TipoCliente;
+import com.iesdoctorbalmis.spring.entity.Cliente;
+import com.iesdoctorbalmis.spring.entity.TipoCliente;
 import com.iesdoctorbalmis.spring.repository.ClienteRepositorio;
 
 @SpringBootApplication

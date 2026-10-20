@@ -1,7 +1,9 @@
 package com.iesdoctorbalmis.spring.repository;
 
-import com.iesdoctorbalmis.spring.model.Empleado;
 import org.springframework.stereotype.Component;
+
+import com.iesdoctorbalmis.spring.entity.Empleado;
+
 import java.util.ArrayList;
 import java.util.List;
 

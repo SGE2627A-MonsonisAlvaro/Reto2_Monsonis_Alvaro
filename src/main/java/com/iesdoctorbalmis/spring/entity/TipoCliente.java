@@ -1,4 +1,4 @@
-package com.iesdoctorbalmis.spring.model;
+package com.iesdoctorbalmis.spring.entity;
 
 public enum TipoCliente {
     PROSPECTO,

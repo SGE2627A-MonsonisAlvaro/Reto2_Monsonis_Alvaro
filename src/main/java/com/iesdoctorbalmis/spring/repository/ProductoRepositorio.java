@@ -1,7 +1,9 @@
 package com.iesdoctorbalmis.spring.repository;
 
-import com.iesdoctorbalmis.spring.model.Producto;
 import org.springframework.stereotype.Component;
+
+import com.iesdoctorbalmis.spring.entity.Producto;
+
 import java.util.ArrayList;
 import java.util.List;
 

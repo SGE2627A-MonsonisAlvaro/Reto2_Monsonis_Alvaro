@@ -5,8 +5,8 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
-import com.iesdoctorbalmis.spring.model.Cliente;
-import com.iesdoctorbalmis.spring.model.TipoCliente;
+import com.iesdoctorbalmis.spring.entity.Cliente;
+import com.iesdoctorbalmis.spring.entity.TipoCliente;
 
 @Component
 public class ClienteRepositorio {
