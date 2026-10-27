@@ -8,7 +8,31 @@
 
 <body>
     <th:block th:fragment="main-content">
-        <!-- Aquí va el contenido específico de la lista de empleados -->
+        <!-- Aquí va el contenido específico de la lista de clientes -->
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+            <h2 class="balmis-title h4 mb-0">Clientes</h2>
+            <div class="d-flex gap-2">
+                <input class="form-control form-control-sm" type="search" placeholder="Buscar cliente…" />
+                <button class="btn btn-primary btn-sm"><i class="bi bi-plus-lg"></i> Nuevo</button>
+            </div>
+        </div>
+        <div class="table-responsive bg-white rounded-3 shadow-sm">
+            <table class="table table-hover balmis-table mb-0">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Teléfono</th>
+                        <th>Tipo</th>
+                        <th>Alta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí van las filas de cada cliente -->
+                </tbody>
+            </table>
+        </div>
     </th:block>
 </body>
 

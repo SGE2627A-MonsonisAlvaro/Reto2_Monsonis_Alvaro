@@ -8,7 +8,31 @@
 
 <body>
     <th:block th:fragment="main-content">
-        <!-- Aquí va el contenido específico de la lista de empleados -->
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+            <h2 class="balmis-title h4 mb-0">Empleados</h2>
+            <div class="d-flex gap-2">
+                <input class="form-control form-control-sm" type="search" placeholder="Buscar empleado…" />
+                <button class="btn btn-primary btn-sm"><i class="bi bi-plus-lg"></i> Nuevo</button>
+            </div>
+        </div>
+        <div class="table-responsive bg-white rounded-3 shadow-sm">
+            <table class="table table-hover balmis-table mb-0">
+                <thead>
+                    <tr>
+                        <th>Nº Empleado</th>
+                        <th>Nombre completo</th>
+                        <th>Cargo</th>
+                        <th>Departamento</th>
+                        <th>Email</th>
+                        <th>Incorporación</th>
+                        <th>Activo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí van las filas de cada empleado -->
+                </tbody>
+            </table>
+        </div>
     </th:block>
 </body>
 
