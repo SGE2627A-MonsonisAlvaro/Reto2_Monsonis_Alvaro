@@ -8,6 +8,13 @@
 
 <body>
     <th:block th:fragment="main-content">
+        <nav aria-label="breadcrumb" class="balmis-breadcrumb">
+            <ol class="breadcrumb mb-1">
+                <li class="breadcrumb-item"><a th:href="@{/}">Panel</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Productos</li>
+            </ol>
+        </nav>
+
         <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
             <h2 class="balmis-title h4 mb-0">Productos</h2>
             <div class="d-flex gap-2">
