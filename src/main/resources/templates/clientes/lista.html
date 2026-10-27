@@ -29,7 +29,20 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Aquí van las filas de cada cliente -->
+                    <tr th:each="cliente : ${clientes}">
+                        <td th:text="${cliente.codigoCliente}"></td>
+                        <td th:text="${cliente.nombre}"></td>
+                        <td th:text="${cliente.email}"></td>
+                        <td th:text="${cliente.telefono}"></td>
+                        <td>
+                            <span class="badge" th:classappend="${cliente.tipoCliente.name() == 'ACTIVO'}
+                                            ? 'bg-success'
+                                            : (${cliente.tipoCliente.name() == 'PROSPECTO'}
+                                                ? 'bg-warning text-dark'
+                                                : 'bg-secondary')" th:text="${cliente.tipoCliente}"></span>
+                        </td>
+                        <td th:text="${#temporals.format(cliente.fechaAlta, 'dd/MM/yyyy')}"></td>
+                    </tr>
                 </tbody>
             </table>
         </div>

@@ -29,7 +29,18 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Aquí van las filas de cada empleado -->
+                    <tr th:each="empleado : ${empleados}">
+                        <td th:text="${empleado.numeroEmpleado}"></td>
+                        <td th:text="${empleado.nombre + ' ' + empleado.apellidos}"></td>
+                        <td th:text="${empleado.cargo}"></td>
+                        <td th:text="${empleado.departamento}"></td>
+                        <td th:text="${empleado.email}"></td>
+                        <td th:text="${#temporals.format(empleado.fechaIncorporacion, 'dd/MM/yyyy')}"></td>
+                        <td>
+                            <span class="badge" th:classappend="${empleado.activo} ? 'bg-success' : 'bg-secondary'"
+                                th:text="${empleado.activo} ? 'Sí' : 'No'"></span>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>

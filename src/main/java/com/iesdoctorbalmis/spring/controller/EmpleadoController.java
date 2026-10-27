@@ -1,16 +1,26 @@
 package com.iesdoctorbalmis.spring.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.iesdoctorbalmis.spring.repository.EmpleadoRepository;
 
 @Controller
 @RequestMapping("/empleados")
 public class EmpleadoController {
 
-    @GetMapping
-    public String getMethodName() {
-        return "empleados/lista"; // -> templates/empleados/lista
+    private final EmpleadoRepository empleadoRepository;
+
+    // Inyección por constructor
+    public EmpleadoController(EmpleadoRepository empleadoRepository) {
+        this.empleadoRepository = empleadoRepository;
     }
 
+    @GetMapping
+    public String lista(Model model) {
+        model.addAttribute("empleados", empleadoRepository.findAll());
+        return "empleados/lista";
+    }
 }
