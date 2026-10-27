@@ -9,6 +9,25 @@
     --balmis-line: #D9E2EC;
 }
 
+#logo_GVA {
+    margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#portada {
+    margin-top: 20px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.jumbotron {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+  color: #0B2545;
+}
+
 #logo_IES {
 	width: 50%;
 	margin-bottom: 10px;
